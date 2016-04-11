@@ -12,7 +12,7 @@
                 "lookupField": {"location": "json"},
                 "customName": {"location": "uri"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\createOrUpdateCustomObjectsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\createOrUpdateCustomObjectsResponse"
         },
         "importLeadsCsv": {
             "httpMethod": "POST",
@@ -54,7 +54,7 @@
                 "batchSize": {"location": "query"},
                 "nextPageToken": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetListsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetListsResponse"
         },
         "getList": {
             "httpMethod": "GET",
@@ -62,7 +62,7 @@
             "parameters": {
                 "id": {"location": "uri"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetListResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetListResponse"
         },
         "getLeadByFilterType": {
             "httpMethod": "GET",
@@ -72,7 +72,7 @@
                 "filterValues": {"location": "query"},
                 "fields": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetLeadResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetLeadResponse"
         },
         "getLeadsByFilterType": {
             "httpMethod": "GET",
@@ -83,7 +83,7 @@
                 "fields": {"location": "query"},
                 "nextPageToken": {"location": "query", "required": false}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetLeadsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetLeadsResponse"
         },
         "getLeadsByList": {
             "httpMethod": "GET",
@@ -94,7 +94,7 @@
                 "nextPageToken": {"location": "query"},
                 "fields": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetLeadsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetLeadsResponse"
         },
         "isMemberOfList": {
             "httpMethod": "GET",
@@ -103,7 +103,7 @@
                 "listId": {"location": "uri"},
                 "id": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\IsMemberOfListResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\IsMemberOfListResponse"
         },
         "getLead": {
             "httpMethod": "GET",
@@ -112,7 +112,7 @@
                 "id": {"location": "uri"},
                 "fields": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetLeadResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetLeadResponse"
         },
         "getCampaigns": {
             "httpMethod": "GET",
@@ -125,7 +125,7 @@
                 "batchSize": {"location": "query"},
                 "nextPageToken": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetCampaignsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetCampaignsResponse"
         },
         "getCampaign": {
             "httpMethod": "GET",
@@ -135,7 +135,7 @@
                     "location": "uri"
                 }
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetCampaignResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetCampaignResponse"
         },
         "requestCampaign": {
             "httpMethod": "POST",
@@ -144,7 +144,7 @@
                 "id": {"location": "uri"},
                 "input": {"location": "json"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\RequestCampaignResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\RequestCampaignResponse"
         },
         "scheduleCampaign": {
             "httpMethod": "POST",
@@ -153,7 +153,7 @@
                 "id": {"location": "uri"},
                 "input": {"location": "json"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\ScheduleCampaignResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\ScheduleCampaignResponse"
         },
         "createOrUpdateLeads": {
             "httpMethod": "POST",
@@ -164,7 +164,7 @@
                 "lookupField": {"location": "json"},
                 "partitionName": {"location": "json"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\CreateOrUpdateLeadsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\CreateOrUpdateLeadsResponse"
         },
         "addLeadsToList": {
             "httpMethod": "POST",
@@ -173,7 +173,7 @@
                 "listId": {"location": "uri"},
                 "id": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\AddOrRemoveLeadsToListResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\AddOrRemoveLeadsToListResponse"
         },
         "associateLead": {
             "httpMethod": "POST",
@@ -182,7 +182,7 @@
                 "id": {"location": "uri"},
                 "cookie": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\AssociateLeadResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\AssociateLeadResponse"
         },
         "removeLeadsFromList": {
             "httpMethod": "DELETE",
@@ -191,7 +191,7 @@
                 "listId": {"location": "uri"},
                 "id": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\AddOrRemoveLeadsToListResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\AddOrRemoveLeadsToListResponse"
         },
         "deleteLead": {
             "httpMethod": "DELETE",
@@ -200,7 +200,7 @@
                 "listId": {"location": "uri"},
                 "id": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\DeleteLeadResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\DeleteLeadResponse"
         },
         "getPagingToken": {
             "httpMethod": "GET",
@@ -208,25 +208,24 @@
             "parameters": {
                 "sinceDatetime": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetPagingToken"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetPagingToken"
         },
         "getLeadChanges": {
             "httpMethod": "GET",
             "uri": "activities/leadchanges.json",
             "parameters": {
-                "nextPageToken": {"location": "query"},
                 "batchSize": {"location": "query"},
                 "nextPageToken": {"location": "query"},
                 "listId": {"location": "query"},
                 "fields": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\GetLeadChanges"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetLeadChanges"
         },
         "getLeadPartitions": {
             "httpMethod": "GET",
             "uri": "leads/partitions.json",
             "parameters": {},
-            "responseClass": "CSD\\Marketo\\Response\\GetLeadPartitionsResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\GetLeadPartitionsResponse"
         },
         "updateEmailContent": {
             "httpMethod": "POST",
@@ -238,7 +237,7 @@
                 "fromName": {"location": "query"},
                 "replyTo": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\UpdateEmailContentReponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\UpdateEmailContentReponse"
         },
         "updateEmailContentInEditableSection": {
             "httpMethod": "POST",
@@ -249,7 +248,7 @@
                 "type": {"location": "query"},
                 "value": {"location": "query"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\UpdateEmailContentInEditableSectionResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\UpdateEmailContentInEditableSectionResponse"
         },
         "approveEmailbyId": {
             "httpMethod": "POST",
@@ -257,7 +256,7 @@
             "parameters": {
                 "id": {"location": "uri"}
             },
-            "responseClass": "CSD\\Marketo\\Response\\ApproveEmailResponse"
+            "responseClass": "Arkadedigital\\Marketo\\Response\\ApproveEmailResponse"
         }
     }
 }

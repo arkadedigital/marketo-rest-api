@@ -6,7 +6,7 @@ Installation
 ----------------
 The recommended way of installing the client is via [Composer](http://getcomposer.org/). Simply run the following command to add the library to your composer.json file.
 
-    composer require dchesterton/marketo-rest-api
+    composer require arkadedigital/marketo-rest-api
 
 Setup
 ----------------
@@ -15,7 +15,7 @@ You must specify either a Munchkin ID or the full url.
 
 ####For Rest Api access:
 ```php
-use CSD\Marketo\Client;
+use Arkadedigital\Marketo\Client;
 
 $client = Client::factory(array(
     'client_id' => 'Marketo client ID',         // required
@@ -26,7 +26,7 @@ $client = Client::factory(array(
 
 ####For Bulk Api access:
 ```php
-use CSD\Marketo\Client;
+use Arkadedigital\Marketo\Client;
 
 $client = Client::factory(array(
     'client_id' => 'Marketo client ID',         // required

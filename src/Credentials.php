@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace CSD\Marketo;
+namespace Arkadedigital\Marketo;
 
 use CommerceGuys\Guzzle\Plugin\Oauth2\GrantType\GrantTypeInterface;
 use Guzzle\Http\Client as GuzzleClient;

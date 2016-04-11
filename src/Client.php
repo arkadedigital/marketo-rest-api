@@ -8,28 +8,28 @@
  * file that was distributed with this source code.
  */
 
-namespace CSD\Marketo;
+namespace Arkadedigital\Marketo;
 
 // Guzzle
 use CommerceGuys\Guzzle\Plugin\Oauth2\Oauth2Plugin;
-use CSD\Marketo\Response\GetLeadChanges;
-use CSD\Marketo\Response\GetPagingToken;
+use Arkadedigital\Marketo\Response\GetLeadChanges;
+use Arkadedigital\Marketo\Response\GetPagingToken;
 use Guzzle\Common\Collection;
 use Guzzle\Service\Client as GuzzleClient;
 use Guzzle\Service\Description\ServiceDescription;
 
 // Response classes
-use CSD\Marketo\Response\AddOrRemoveLeadsToListResponse;
-use CSD\Marketo\Response\AssociateLeadResponse;
-use CSD\Marketo\Response\CreateOrUpdateLeadsResponse;
-use CSD\Marketo\Response\GetCampaignResponse;
-use CSD\Marketo\Response\GetCampaignsResponse;
-use CSD\Marketo\Response\GetLeadResponse;
-use CSD\Marketo\Response\GetLeadPartitionsResponse;
-use CSD\Marketo\Response\GetLeadsResponse;
-use CSD\Marketo\Response\GetListResponse;
-use CSD\Marketo\Response\GetListsResponse;
-use CSD\Marketo\Response\IsMemberOfListResponse;
+use Arkadedigital\Marketo\Response\AddOrRemoveLeadsToListResponse;
+use Arkadedigital\Marketo\Response\AssociateLeadResponse;
+use Arkadedigital\Marketo\Response\CreateOrUpdateLeadsResponse;
+use Arkadedigital\Marketo\Response\GetCampaignResponse;
+use Arkadedigital\Marketo\Response\GetCampaignsResponse;
+use Arkadedigital\Marketo\Response\GetLeadResponse;
+use Arkadedigital\Marketo\Response\GetLeadPartitionsResponse;
+use Arkadedigital\Marketo\Response\GetLeadsResponse;
+use Arkadedigital\Marketo\Response\GetListResponse;
+use Arkadedigital\Marketo\Response\GetListsResponse;
+use Arkadedigital\Marketo\Response\IsMemberOfListResponse;
 
 /**
  * Guzzle client for communicating with the Marketo.com REST API.
@@ -709,7 +709,7 @@ class Client extends GuzzleClient
      * @param array   $inputs
      * @param boolean $returnRaw
      *
-     * @return \CSD\Marketo\Response\CreateOrUpdateLeadsResponse
+     * @return \Arkadedigital\Marketo\Response\CreateOrUpdateLeadsResponse
      * @link http://developers.marketo.com/documentation/rest/createupdate-leads/
      *
      */
