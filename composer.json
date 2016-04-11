@@ -1,5 +1,5 @@
 {
-    "name": "dchesterton/marketo-rest-api",
+    "name": "arkadedigital/marketo-rest-api",
     "description": "A PHP client for the Marketo.com REST API",
     "license": "MIT",
     "require": {
