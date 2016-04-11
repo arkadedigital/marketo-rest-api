@@ -214,7 +214,6 @@
             "httpMethod": "GET",
             "uri": "activities/leadchanges.json",
             "parameters": {
-                "nextPageToken": {"location": "query"},
                 "batchSize": {"location": "query"},
                 "nextPageToken": {"location": "query"},
                 "listId": {"location": "query"},
