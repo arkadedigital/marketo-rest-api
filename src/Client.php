@@ -522,7 +522,7 @@ class Client extends GuzzleClient
      *
      * @return RequestCampaignResponse
      */
-    public function requestCampaign($id, $leads, $tokens = array(), $args = array(), $returnRaw = false)
+    public function requestCampaign($id, $leads, $tokens = array(), $args = array(), $returnRaw = true)
     {
         $args['id'] = $id;
 
@@ -554,7 +554,7 @@ class Client extends GuzzleClient
         $args['id'] = $id;
 
         if (!empty($runAt)) {
-          $args['input']['runAt'] = $runAt->format('c');
+            $args['input']['runAt'] = $runAt->format('c');
         }
 
         if (!empty($tokens)) {
@@ -684,6 +684,45 @@ class Client extends GuzzleClient
         return $this->getResult('approveEmailbyId', $args, false, $returnRaw);
     }
 
+
+    /**
+     * Update the given leads, or create them if they do not exist.
+     *
+     * @param array  $inputs
+     * @param string $lookupField
+     * @see Client::createOrUpdateLeadsCommand()
+     *
+     * @return CreateOrUpdateLeadsResponse
+     */
+    public function createOrUpdateCustomObjects($customObjectName, $lookupField = null, $inputs = [])
+    {
+        return $this->createOrUpdateCustomObjectsCommand('createOrUpdate', $customObjectName, $lookupField, $inputs);
+    }
+
+
+    /**
+     * Calls the CreateOrUpdateLeads command with the given action.
+     *
+     * @param string  $action
+     * @param string  $customObjectName
+     * @param string  $lookupField
+     * @param array   $inputs
+     * @param boolean $returnRaw
+     *
+     * @return \CSD\Marketo\Response\CreateOrUpdateLeadsResponse
+     * @link http://developers.marketo.com/documentation/rest/createupdate-leads/
+     *
+     */
+    private function createOrUpdateCustomObjectsCommand($action, $customObjectName, $lookupField, $inputs, $returnRaw = false)
+    {
+        $args['input'] = $inputs;
+        $args['lookupField'] = $lookupField;
+        $args['action'] = $action;
+        $args['customName'] = $customObjectName;
+
+        return $this->getResult('createOrUpdateCustomObjects', $args, false, $returnRaw);
+    }
+
     /**
      * Internal helper method to actually perform command.
      *
@@ -703,6 +742,7 @@ class Client extends GuzzleClient
             $cmd->prepare();
 
             $url = preg_replace('/id%5B([0-9]+)%5D/', 'id', $cmd->getRequest()->getUrl());
+
             $cmd->getRequest()->setUrl($url);
         }
 
