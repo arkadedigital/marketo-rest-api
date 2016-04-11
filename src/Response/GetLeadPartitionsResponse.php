@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace CSD\Marketo\Response;
+namespace Arkadedigital\Marketo\Response;
 
-use CSD\Marketo\Response;
+use Arkadedigital\Marketo\Response;
 
 /**
  * Response for the getLeadPartitions API method.

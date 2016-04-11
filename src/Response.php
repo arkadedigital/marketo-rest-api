@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace CSD\Marketo;
+namespace Arkadedigital\Marketo;
 
 use Guzzle\Service\Command\OperationCommand;
 use Guzzle\Service\Command\ResponseClassInterface;

@@ -1,8 +1,8 @@
 <?php
 
-namespace CSD\Marketo\Response;
+namespace Arkadedigital\Marketo\Response;
 
-use CSD\Marketo\Response;
+use Arkadedigital\Marketo\Response;
 
 /**
  * Response for the requestCampaign API method.
