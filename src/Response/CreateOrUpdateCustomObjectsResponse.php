@@ -19,9 +19,22 @@ class CreateOrUpdateCustomObjectsResponse extends Response
      */
     public function isSuccess()
     {
-        return parent::isSuccess()? count($this->getResult()) > 0: false;
-    }
+//        return parent::isSuccess()? count($this->getResult()) > 0: false;
 
+        $error = false;
+        foreach ($this->getResult() as $row) {
+            if ($row['status'] == 'skipped') {
+                $error = true;
+            }
+        }
+
+        if ($error === true) {
+            return false;
+        }
+
+        return true;
+    }
+    
     /**
      * Get the status of a lead. If no lead ID is given, it returns the status of the first lead returned.
      *
