@@ -40,6 +40,10 @@ Usage
 ----------------
 View the source of `src/Client.php` for all the available methods.
 
+Support
+----------------
+Feel free to [create a GitHub issue](https://github.com/arkadedigital/marketo-rest-api/issues/new) or [send us an email](mailto:support@arkade.com.au) for support regarding this extension.
+
 License
 ----------------
 This source is licensed under an MIT License, see the LICENSE file for full details. If you use this code, it would be great to hear from you.
